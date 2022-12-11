@@ -27,10 +27,10 @@
                     .logo-final {
                         display: flex;
                         align-items: center;
-                        height: 5rem;
+                        max-height: 2rem;
 
                         img {
-                            width: 6rem;
+                            width: 2rem;
                         }
                     }
                 }
@@ -270,20 +270,6 @@
         margin-left: 6vw;
         margin-right: 6vw;
         height: 80vh;
-
-        .skewed {
-            position: absolute;
-            top: 20rem;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            width: 100%;
-            height: 10%;
-            background: #2c3e50;
-            z-index: 0;
-            transform: skewY(-2deg);
-            transform-origin: top left;
-        }
 
         .section1 {
             margin-top: 6vw;

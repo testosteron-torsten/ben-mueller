@@ -122,10 +122,10 @@ html {
   header #header.shrunk .logo .logo-bg .logo-final {
     display: flex;
     align-items: center;
-    height: 5rem;
+    max-height: 2rem;
   }
   header #header.shrunk .logo .logo-bg .logo-final img {
-    width: 6rem;
+    width: 2rem;
   }
   header #header.shrunk #mainnav {
     background-color: rgba(255, 255, 255, 0.95);
@@ -312,19 +312,6 @@ html {
     margin-left: 6vw;
     margin-right: 6vw;
     height: 80vh;
-  }
-  main .skewed {
-    position: absolute;
-    top: 20rem;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    background: #2c3e50;
-    z-index: 0;
-    transform: skewY(-2deg);
-    transform-origin: top left;
   }
   main .section1 {
     margin-top: 6vw;
