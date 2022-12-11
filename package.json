@@ -1,0 +1,24 @@
+{
+  "name": "ben",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testosteron-torsten/ben-mueller.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/testosteron-torsten/ben-mueller/issues"
+  },
+  "homepage": "https://github.com/testosteron-torsten/ben-mueller#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "esbuild": "^0.16.4",
+    "sass": "^1.56.2"
+  }
+}
