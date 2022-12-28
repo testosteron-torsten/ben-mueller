@@ -1,0 +1,50 @@
+@include breakpoint($desktop) {
+
+    .locations {
+        background-color: $accent;
+        margin-top: 6vw;
+
+        .marginloc {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 12vw;
+            margin-right: 12vw;
+        }
+
+        .location1,
+        .location2,
+        .location3 {
+            padding-top: 7rem;
+            padding-bottom: 7rem;
+
+
+            h2 {
+                font-family: $bold;
+                font-size: 1.8rem;
+                color: $cream;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                font-family: $regular;
+                font-size: 1.5rem;
+                color: $cream;
+                line-height: 1.2;
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

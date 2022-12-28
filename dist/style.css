@@ -52,28 +52,28 @@ table {
   border-spacing: 0;
 }
 
-/* kumbh-sans-300 - latin */
+/* jost-regular - latin */
 @font-face {
-  font-family: "Kumbh Sans Light";
-  font-style: normal;
-  font-weight: 300;
-  src: local(""), url("./fonts/kumbh-sans-v12-latin-300.woff2") format("woff2"), url("./fonts/kumbh-sans-v12-latin-300.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* kumbh-sans-regular - latin */
-@font-face {
-  font-family: "Kumbh Sans Regular";
+  font-family: "Jost Regular";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("./fonts/kumbh-sans-v12-latin-regular.woff2") format("woff2"), url("./fonts/kumbh-sans-v12-latin-regular.woff") format("woff");
+  src: local(""), url("./fonts/jost-v14-latin-regular.woff2") format("woff2"), url("./fonts/jost-v14-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* kumbh-sans-600 - latin */
+/* jost-600 - latin */
 @font-face {
-  font-family: "Kumbh Sans Bold";
+  font-family: "Jost Bold";
   font-style: normal;
   font-weight: 600;
-  src: local(""), url("./fonts/kumbh-sans-v12-latin-600.woff2") format("woff2"), url("./fonts/kumbh-sans-v12-latin-600.woff") format("woff");
+  src: local(""), url("./fonts/jost-v14-latin-600.woff2") format("woff2"), url("./fonts/jost-v14-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jost-800 - latin */
+@font-face {
+  font-family: "Jost ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/jost-v14-latin-800.woff2") format("woff2"), url("../fonts/jost-v14-latin-800.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 .hidden {
@@ -96,7 +96,76 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 45.0625rem) {
+body {
+  background-color: #FFF7EC;
+}
+
+@media (min-width: 48.0625rem) {
+  .section2,
+  .section1,
+  .section3,
+  .section5 {
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .section2,
+  .section1,
+  .section5 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .section2 h2,
+  .section1 h2,
+  .section5 h2 {
+    font-size: 1.4rem !important;
+  }
+  .section2 h3,
+  .section1 h3,
+  .section5 h3 {
+    font-size: 3rem !important;
+  }
+  .section3 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .section3 h3 {
+    font-size: 1.5rem !important;
+  }
+  .section3 p {
+    font-size: 1.2rem !important;
+  }
+  .section4 .text {
+    margin-left: 5vw !important;
+  }
+  .section4 .text h2 {
+    font-size: 1.4rem !important;
+  }
+  .section4 .text h3 {
+    font-size: 3rem !important;
+  }
+  .section4 .image {
+    margin-right: 5vw !important;
+  }
+  .locations .marginloc {
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+  }
+  .locations .marginloc h2 {
+    font-size: 1.2rem !important;
+  }
+  .locations .marginloc p {
+    font-size: 1rem !important;
+  }
+  .hero-text {
+    left: 5vw !important;
+  }
+  #mainnav ul {
+    padding-right: 5vw !important;
+  }
+}
+@media (min-width: 48.0625rem) {
   header #header.shrunk {
     height: 5rem;
     grid-template-columns: 30% 70%;
@@ -105,14 +174,14 @@ html {
   }
   header #header.shrunk .logo {
     grid-area: logo;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(222, 184, 135, 0.8549019608);
     height: 5rem;
     text-decoration: none;
   }
   header #header.shrunk .logo .logo-bg {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0);
-    margin-left: 6vw;
+    margin-left: 12vw;
     height: 5rem;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -122,13 +191,13 @@ html {
   header #header.shrunk .logo .logo-bg .logo-final {
     display: flex;
     align-items: center;
-    max-height: 2rem;
+    max-height: 5rem;
   }
   header #header.shrunk .logo .logo-bg .logo-final img {
-    width: 2rem;
+    width: 4rem;
   }
   header #header.shrunk #mainnav {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(222, 184, 135, 0.8549019608);
   }
   header #header {
     position: fixed;
@@ -136,13 +205,13 @@ html {
     display: grid;
     width: 100%;
     height: 4rem;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 4rem;
     grid-template-areas: "logo mainnav";
   }
   header #header .logo {
     grid-area: logo;
-    background-color: white;
+    background-color: #deb887;
     will-change: background-color;
     transition: background-color 0.5s;
     height: 4rem;
@@ -150,8 +219,8 @@ html {
   }
   header #header .logo .logo-bg {
     display: inline-block;
-    background-color: #d5a63a;
-    margin-left: 6vw;
+    background-color: #8b9e5c;
+    margin-left: 12vw;
     height: 9rem;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -168,7 +237,7 @@ html {
   }
   header #header #mainnav {
     grid-area: mainnav;
-    background-color: white;
+    background-color: #deb887;
     display: flex;
     justify-content: flex-end;
     will-change: background-color;
@@ -177,15 +246,15 @@ html {
   header #header #mainnav ul {
     display: flex;
     justify-content: space-around;
-    padding-right: 6vw;
+    padding-right: 9.5vw;
   }
   header #header #mainnav ul li {
     padding-right: 2.5vw;
     align-self: center;
   }
   header #header #mainnav ul li a {
-    color: #d5a63a;
-    font-family: "Kumbh Sans Regular";
+    color: #FFF7EC;
+    font-family: "Jost Regular";
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;
@@ -194,7 +263,7 @@ html {
     text-underline-offset: 0.5vh;
   }
   header #header #mainnav ul li a:hover {
-    text-decoration-color: #ae8933;
+    text-decoration-color: #8b9e5c;
   }
   .hero {
     height: 65rem;
@@ -204,39 +273,39 @@ html {
   }
   .hero .hero-text {
     position: relative;
-    top: 40rem;
-    left: 6vw;
+    top: 35rem;
+    left: 12vw;
   }
   .hero .hero-text h2 {
-    color: white;
+    color: #FFF7EC;
     display: inline-block;
-    font-family: "Kumbh Sans Bold";
+    font-family: "Jost ExtraBold";
     font-size: 4rem;
     padding-bottom: 3rem;
     line-height: 1.2;
   }
   .hero .hero-text a {
-    font-family: "Kumbh Sans Regular";
+    font-family: "Jost Regular";
     text-decoration: none;
-    color: white;
+    color: #FFF7EC;
     text-transform: uppercase;
     font-size: 1.5rem;
     border-width: 0.2vh;
     border-style: solid;
-    border-color: #d5a63a;
+    border-color: #8b9e5c;
     padding: 1rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
   .hero .hero-text a:hover {
-    font-family: "Kumbh Sans Regular";
+    font-family: "Jost Regular";
     text-decoration: none;
-    color: white;
+    color: #FFF7EC;
     text-transform: uppercase;
     font-size: 1.5rem;
     border-width: 0.2vh;
     border-style: solid;
-    border-color: #d5a63a;
+    border-color: #8b9e5c;
     padding: 1rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -246,134 +315,78 @@ html {
   }
   @keyframes pulse {
     10% {
-      background: linear-gradient(to right, #d5a63a 0%, rgba(255, 255, 255, 0) 10%);
+      background: linear-gradient(to right, #8b9e5c 0%, rgba(255, 255, 255, 0) 10%);
     }
     20% {
-      background: linear-gradient(to right, #d5a63a 10%, rgba(255, 255, 255, 0) 20%);
+      background: linear-gradient(to right, #8b9e5c 10%, rgba(255, 255, 255, 0) 20%);
     }
     30% {
-      background: linear-gradient(to right, #d5a63a 20%, rgba(255, 255, 255, 0) 30%);
+      background: linear-gradient(to right, #8b9e5c 20%, rgba(255, 255, 255, 0) 30%);
     }
     40% {
-      background: linear-gradient(to right, #d5a63a 30%, rgba(255, 255, 255, 0) 40%);
+      background: linear-gradient(to right, #8b9e5c 30%, rgba(255, 255, 255, 0) 40%);
     }
     50% {
-      background: linear-gradient(to right, #d5a63a 40%, rgba(255, 255, 255, 0) 50%);
+      background: linear-gradient(to right, #8b9e5c 40%, rgba(255, 255, 255, 0) 50%);
     }
     60% {
-      background: linear-gradient(to right, #d5a63a 50%, rgba(255, 255, 255, 0) 60%);
+      background: linear-gradient(to right, #8b9e5c 50%, rgba(255, 255, 255, 0) 60%);
     }
     70% {
-      background: linear-gradient(to right, #d5a63a 60%, rgba(255, 255, 255, 0) 70%);
+      background: linear-gradient(to right, #8b9e5c 60%, rgba(255, 255, 255, 0) 70%);
     }
     80% {
-      background: linear-gradient(to right, #d5a63a 70%, rgba(255, 255, 255, 0) 80%);
+      background: linear-gradient(to right, #8b9e5c 70%, rgba(255, 255, 255, 0) 80%);
     }
     90% {
-      background: linear-gradient(to right, #d5a63a 80%, rgba(255, 255, 255, 0) 90%);
+      background: linear-gradient(to right, #8b9e5c 80%, rgba(255, 255, 255, 0) 90%);
     }
     100% {
-      background: linear-gradient(to right, #d5a63a 101%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to right, #8b9e5c 101%, rgba(255, 255, 255, 0) 100%);
     }
   }
-  @keyframes pulse2 {
-    10% {
-      background: linear-gradient(to right, #d5a63a 0%, #262626 10%);
-    }
-    20% {
-      background: linear-gradient(to right, #d5a63a 10%, #262626 20%);
-    }
-    30% {
-      background: linear-gradient(to right, #d5a63a 20%, #262626 30%);
-    }
-    40% {
-      background: linear-gradient(to right, #d5a63a 30%, #262626 40%);
-    }
-    50% {
-      background: linear-gradient(to right, #d5a63a 40%, #262626 50%);
-    }
-    60% {
-      background: linear-gradient(to right, #d5a63a 50%, #262626 60%);
-    }
-    70% {
-      background: linear-gradient(to right, #d5a63a 60%, #262626 70%);
-    }
-    80% {
-      background: linear-gradient(to right, #d5a63a 70%, #262626 80%);
-    }
-    90% {
-      background: linear-gradient(to right, #d5a63a 80%, #262626 90%);
-    }
-    100% {
-      background: linear-gradient(to right, #d5a63a 101%, rgba(255, 255, 255, 0) 100%);
-    }
-  }
-  main {
-    margin-left: 6vw;
-    margin-right: 6vw;
-    height: 80vh;
-  }
+}
+@media (min-width: 48.0625rem) {
   main .section1 {
     margin-top: 6vw;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     grid-template-areas: "text imagegrid";
   }
   main .section1 .text {
     grid-area: text;
     display: flex;
     align-items: center;
+    background-image: url(./images/crosaint.svg);
+    background-position: center;
+    background-repeat: no-repeat;
   }
   main .section1 .text h2 {
-    font-family: "Kumbh Sans Light";
-    color: #ae8933;
-    font-size: 2rem;
+    font-family: "Jost Regular";
+    color: #8b9e5c;
+    font-size: 1.8rem;
     text-transform: uppercase;
   }
+  main .section1 .text h3 {
+    color: #504538;
+    font-family: "Jost Bold";
+    font-size: 4.5rem;
+    line-height: 1.1;
+    max-width: 100%;
+  }
   main .section1 .text p {
-    color: #262626;
-    font-family: "Kumbh Sans Bold";
-    font-size: 3rem;
+    color: #504538;
+    font-family: "Jost Regular";
+    font-size: 1.3rem;
     line-height: 1.3;
+    padding-top: 2rem;
+    max-width: 100%;
   }
   main .section1 .text .headline {
     display: inline-block;
   }
   main .section1 .text .headline .divider img {
-    max-width: 10vw;
-  }
-  main .section1 .text .button {
-    padding-top: 4rem;
-  }
-  main .section1 .text .button a {
-    font-family: "Kumbh Sans Regular";
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1rem;
-    border-width: 0.2vh;
-    border-style: solid;
-    border-color: #262626;
-    padding: 1rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    background-color: #262626;
-  }
-  main .section1 .text .button a:hover {
-    font-family: "Kumbh Sans Regular";
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1rem;
-    border-width: 0.2vh;
-    border-style: solid;
-    border-color: white;
-    padding: 1rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    animation-duration: 0.2s;
-    animation-name: pulse2;
-    animation-fill-mode: forwards;
+    max-width: 100vw;
   }
   main .section1 .image {
     grid-area: imagegrid;
@@ -381,103 +394,494 @@ html {
     justify-content: flex-end;
   }
   main .section1 .image img {
-    width: 60%;
+    width: 75%;
     align-self: center;
   }
-  main .section2 {
+}
+@media (min-width: 48.0625rem) {
+  .section2 {
+    margin-top: 6vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "text imagegrid";
+  }
+  .section2 .text {
+    grid-area: text;
+    display: flex;
+    align-items: center;
+  }
+  .section2 .text h2 {
+    font-family: "Jost Regular";
+    color: #8b9e5c;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .section2 .text h3 {
+    color: #504538;
+    font-family: "Jost Bold";
+    font-size: 4.5rem;
+    line-height: 1.1;
+    max-width: 100%;
+  }
+  .section2 .text p {
+    color: #504538;
+    font-family: "Jost Regular";
+    font-size: 1.3rem;
+    line-height: 1.3;
+    padding-top: 2rem;
+    max-width: 100%;
+  }
+  .section2 .text .headline {
+    display: inline-block;
+  }
+  .section2 .text .headline .divider img {
+    max-width: 100vw;
+  }
+  .section2 .text .button {
+    padding-top: 4rem;
+  }
+  .section2 .text .button a {
+    font-family: "Jost Regular";
+    text-decoration: none;
+    color: #FFF7EC;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: #8b9e5c;
+    padding: 1rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    background-color: #8b9e5c;
+  }
+  .section2 .text .button a:hover {
+    font-family: "Jost Regular";
+    text-decoration: none;
+    color: #FFF7EC;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: #FFF7EC;
+    padding: 1rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    animation-duration: 0.2s;
+    animation-name: pulse2;
+    animation-fill-mode: forwards;
+  }
+  @keyframes pulse2 {
+    10% {
+      background: linear-gradient(to right, #407f59 0%, #8b9e5c 10%);
+    }
+    20% {
+      background: linear-gradient(to right, #407f59 10%, #8b9e5c 20%);
+    }
+    30% {
+      background: linear-gradient(to right, #407f59 20%, #8b9e5c 30%);
+    }
+    40% {
+      background: linear-gradient(to right, #407f59 30%, #8b9e5c 40%);
+    }
+    50% {
+      background: linear-gradient(to right, #407f59 40%, #8b9e5c 50%);
+    }
+    60% {
+      background: linear-gradient(to right, #407f59 50%, #8b9e5c 60%);
+    }
+    70% {
+      background: linear-gradient(to right, #407f59 60%, #8b9e5c 70%);
+    }
+    80% {
+      background: linear-gradient(to right, #407f59 70%, #8b9e5c 80%);
+    }
+    90% {
+      background: linear-gradient(to right, #407f59 80%, #8b9e5c 90%);
+    }
+    100% {
+      background: linear-gradient(to right, #407f59 101%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+  .section2 .image {
+    grid-area: imagegrid;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(./images/bread.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  .section2 .image img {
+    width: 45%;
+    align-self: center;
+  }
+  .section3 {
     margin-top: 6vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2rem;
+    grid-column-gap: 3vw;
     grid-template-areas: "service1 service2 service3";
   }
-  main .section2 h3 {
-    font-family: "Kumbh Sans Bold";
-    color: #d5a63a;
+  .section3 h3 {
+    font-family: "Jost Bold";
+    color: #FFF7EC;
     font-size: 2rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
-  main .section2 p {
-    color: #d5d5d5;
-    font-family: "Kumbh Sans Light";
+  .section3 p {
+    color: #FFF7EC;
+    font-family: "Jost Regular";
     line-height: 1.3;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     padding-top: 1rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
-  main .section2 .services-text {
-    margin: 2rem;
-  }
-  main .section2 .service1 {
+  .section3 .service1 {
     grid-area: service1;
-    background-image: url(./images/one.svg);
-    background-size: 30rem;
+    background-size: 10rem;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 30rem;
-    background-color: #262626;
+    min-width: 10rem;
+    background-color: #504538;
     display: flex;
     align-items: center;
+    justify-content: center;
     will-change: background-color;
     transition: background-color 1s;
   }
-  main .section2 .service1:hover {
-    background-color: #1f1f1f;
-    background-image: none;
+  .section3 .service1:hover {
+    background-color: #8b9e5c;
   }
-  main .section2 .service2 {
+  .section3 .service2 {
     grid-area: service2;
-    background-image: url(./images/two.svg);
-    background-size: 30rem;
+    background-size: 10rem;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 30rem;
-    background-color: #262626;
+    min-width: 10rem;
+    background-color: #504538;
     display: flex;
     align-items: center;
+    justify-content: center;
     will-change: background-color;
     transition: background-color 1s;
   }
-  main .section2 .service2:hover {
-    background-color: #1f1f1f;
-    background-image: none;
+  .section3 .service2:hover {
+    background-color: #8b9e5c;
   }
-  main .section2 .service3 {
+  .section3 .service3 {
     grid-area: service3;
-    background-image: url(./images/three.svg);
-    background-size: 30rem;
+    background-size: 10rem;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 30rem;
-    background-color: #262626;
+    min-width: 10rem;
+    background-color: #504538;
     display: flex;
     align-items: center;
+    justify-content: center;
     will-change: background-color;
     transition: background-color 1s;
   }
-  main .section2 .service3:hover {
-    background-color: #1f1f1f;
-    background-image: none;
+  .section3 .service3:hover {
+    background-color: #8b9e5c;
   }
-  main .section3 {
+}
+@media (min-width: 48.0625rem) {
+  .locations {
+    background-color: #407f59;
+    margin-top: 6vw;
+  }
+  .locations .marginloc {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
+  .locations .location1,
+  .locations .location2,
+  .locations .location3 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .locations .location1 h2,
+  .locations .location2 h2,
+  .locations .location3 h2 {
+    font-family: "Jost Bold";
+    font-size: 1.8rem;
+    color: #FFF7EC;
+    padding-bottom: 1rem;
+  }
+  .locations .location1 p,
+  .locations .location2 p,
+  .locations .location3 p {
+    font-family: "Jost Regular";
+    font-size: 1.5rem;
+    color: #FFF7EC;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 48.0625rem) {
+  .section4 {
     margin-top: 6vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
-    grid-template-areas: "grid1 grid2" "grid3 grid4";
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "text imagegrid";
+    background-color: #deb887;
   }
-  main .section3 .grid1 {
-    grid-area: grid1;
-    background-color: aqua;
+  .section4 .text {
+    grid-area: text;
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
-  main .section3 .grid2 {
-    grid-area: grid2;
+  .section4 .text h2 {
+    font-family: "Jost Regular";
+    color: #FFF7EC;
+    font-size: 1.8rem;
+    text-transform: uppercase;
   }
-  main .section3 .grid3 {
-    grid-area: grid3;
-    background-color: aquamarine;
+  .section4 .text h3 {
+    color: #504538;
+    font-family: "Jost Bold";
+    font-size: 4.5rem;
+    line-height: 1.1;
+    max-width: 100%;
   }
-  main .section3 .grid4 {
-    grid-area: grid4;
-    background-color: beige;
+  .section4 .text p {
+    color: #504538;
+    font-family: "Jost Regular";
+    font-size: 1.3rem;
+    line-height: 1.3;
+    padding-top: 2rem;
+    max-width: 100%;
+  }
+  .section4 .text .headline {
+    display: inline-block;
+  }
+  .section4 .text .headline .divider img {
+    max-width: 100vw;
+  }
+  .section4 .text .button {
+    padding-top: 4rem;
+  }
+  .section4 .text .button a {
+    font-family: "Jost Regular";
+    text-decoration: none;
+    color: #504538;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: #FFF7EC;
+    padding: 1rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    background-color: #FFF7EC;
+  }
+  .section4 .text .button a:hover {
+    font-family: "Jost Regular";
+    text-decoration: none;
+    color: #FFF7EC;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: #deb887;
+    padding: 1rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    animation-duration: 0.2s;
+    animation-name: pulse3;
+    animation-fill-mode: forwards;
+  }
+  @keyframes pulse3 {
+    10% {
+      background: linear-gradient(to right, #504538 0%, #FFF7EC 10%);
+    }
+    20% {
+      background: linear-gradient(to right, #504538 10%, #FFF7EC 20%);
+    }
+    30% {
+      background: linear-gradient(to right, #504538 20%, #FFF7EC 30%);
+    }
+    40% {
+      background: linear-gradient(to right, #504538 30%, #FFF7EC 40%);
+    }
+    50% {
+      background: linear-gradient(to right, #504538 40%, #FFF7EC 50%);
+    }
+    60% {
+      background: linear-gradient(to right, #504538 50%, #FFF7EC 60%);
+    }
+    70% {
+      background: linear-gradient(to right, #504538 60%, #FFF7EC 70%);
+    }
+    80% {
+      background: linear-gradient(to right, #504538 70%, #FFF7EC 80%);
+    }
+    90% {
+      background: linear-gradient(to right, #504538 80%, #FFF7EC 90%);
+    }
+    100% {
+      background: linear-gradient(to right, #504538 101%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+  .section4 .image {
+    grid-area: imagegrid;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12vw;
+  }
+  .section4 .image img {
+    width: 80%;
+    align-self: center;
+  }
+}
+@media (min-width: 48.0625rem) {
+  .section5 {
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "imagegrid text";
+  }
+  .section5 .text {
+    grid-area: text;
+    display: flex;
+    align-items: center;
+    margin-left: 6vw;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .section5 .text h2 {
+    font-family: "Jost Regular";
+    color: #8b9e5c;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .section5 .text h3 {
+    color: #504538;
+    font-family: "Jost Bold";
+    font-size: 4.5rem;
+    line-height: 1.1;
+    max-width: 100%;
+  }
+  .section5 .text p {
+    color: #504538;
+    font-family: "Jost Regular";
+    font-size: 1.3rem;
+    line-height: 1.3;
+    padding-top: 2rem;
+    max-width: 100%;
+  }
+  .section5 .text .headline {
+    display: inline-block;
+  }
+  .section5 .text .headline .divider img {
+    max-width: 100vw;
+  }
+  .section5 .text .button {
+    padding-top: 4rem;
+  }
+  .section5 .text .button a {
+    font-family: "Jost Regular";
+    text-decoration: none;
+    color: #504538;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: #FFF7EC;
+    padding: 1rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    background-color: #FFF7EC;
+  }
+  .section5 .text .button a:hover {
+    font-family: "Jost Regular";
+    text-decoration: none;
+    color: #FFF7EC;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: #deb887;
+    padding: 1rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    animation-duration: 0.2s;
+    animation-name: pulse3;
+    animation-fill-mode: forwards;
+  }
+  @keyframes pulse3 {
+    10% {
+      background: linear-gradient(to right, #504538 0%, #FFF7EC 10%);
+    }
+    20% {
+      background: linear-gradient(to right, #504538 10%, #FFF7EC 20%);
+    }
+    30% {
+      background: linear-gradient(to right, #504538 20%, #FFF7EC 30%);
+    }
+    40% {
+      background: linear-gradient(to right, #504538 30%, #FFF7EC 40%);
+    }
+    50% {
+      background: linear-gradient(to right, #504538 40%, #FFF7EC 50%);
+    }
+    60% {
+      background: linear-gradient(to right, #504538 50%, #FFF7EC 60%);
+    }
+    70% {
+      background: linear-gradient(to right, #504538 60%, #FFF7EC 70%);
+    }
+    80% {
+      background: linear-gradient(to right, #504538 70%, #FFF7EC 80%);
+    }
+    90% {
+      background: linear-gradient(to right, #504538 80%, #FFF7EC 90%);
+    }
+    100% {
+      background: linear-gradient(to right, #504538 101%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+  .section5 .image {
+    grid-area: imagegrid;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .section5 .image img {
+    width: 100%;
+    align-self: center;
+  }
+}
+@media (min-width: 48.0625rem) {
+  footer {
+    background-color: #deb887;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+  }
+  footer p {
+    text-align: center;
+    font-family: "Jost Regular";
+    color: #504538;
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+  footer a {
+    text-align: center;
+    font-family: "Jost Regular";
+    color: #504538;
+    font-size: 1rem;
   }
 }
 

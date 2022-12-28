@@ -1,17 +1,18 @@
 // BREAKPOINTS
-$mobile: 720;
+$mobile: 768;
 $desktop: $mobile + 1;
 
+
 //COLORS
-$white: white;
-$primary: #d5a63a;
-$secondary: #ae8933;
-$accent: #4b8178;
-$grey: #262626;
-$lightgrey: #d5d5d5;
+$cream: #FFF7EC;
+$primary: #deb887;
+$secondary: #504538;
+$accent: #407f59;
+$accent2: #8b9e5c;
+
 
 
 //FONTS
-$light: 'Kumbh Sans Light';
-$regular: 'Kumbh Sans Regular';
-$bold: 'Kumbh Sans Bold';
+$regular: 'Jost Regular';
+$bold: 'Jost Bold';
+$extrabold: 'Jost ExtraBold';
