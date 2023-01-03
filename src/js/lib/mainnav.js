@@ -1,7 +1,6 @@
 export function init() {
     const nav = document.querySelector("#mainnav");
-    const list = nav.querySelector("ul");
-    const button = nav.querySelector("button");
+    const button = nav.querySelector("#hamburger");
 
     button.addEventListener("click", e => {
         console.log(button.classList)
@@ -14,9 +13,13 @@ export function init() {
         }
     });
 
-    nav.addEventListener("keyup", e => {
-        if(e.code === 'Escape') {
-            button.setAttribute('aria-expanded', false);
-        }
-    });
+    const link = nav.querySelectorAll("a");
+    
+    for(var i = 0; i < link.length; i++) {
+        link[i].addEventListener("click" , e => {
+            console.log(button.classList)
+            button.classList.add('closed');
+            button.classList.remove('open');
+        })
+    }
 }
